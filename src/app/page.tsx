@@ -255,7 +255,7 @@ const SkeletonLoader = () => {
             </div>
             {/* Time and Weather */}
             <div className="flex gap-10 sm:gap-16 overflow-x-auto w-full justify-between pr-3">
-              {Array(4).fill().map((_, i) => (
+              {Array(4).fill(1).map((_, i) => (
                 <div key={i} className="flex flex-col justify-between gap-2 items-center text-xs font-semibold">
                   <div className="w-16 h-4 bg-gray-300 animate-pulse rounded"></div>
                   <div className="w-12 h-12 bg-gray-300 animate-pulse rounded"></div>
@@ -288,7 +288,7 @@ const SkeletonLoader = () => {
       {/* 7-day forecast data */}
       <section className="flex w-full flex-col gap-4">
         <p className="text-2xl w-48 h-6 bg-gray-300 animate-pulse rounded"></p>
-        {Array(7).fill().map((_, i) => (
+        {Array(7).fill(2).map((_, i) => (
           <div key={i} className="flex flex-col gap-4">
             <div className="w-full h-24 bg-gray-300 animate-pulse rounded"></div>
           </div>
